@@ -4,10 +4,11 @@
 @import "abstarcts/mixins";
 @import "base/page-structure";
 
+@import "elements/titles";
+@import "elements/buttons";
+
 @import "components/header";
 @import "components/content";
 @import "components/request";
 @import "components/proposals";
 @import "components/students";
-@import "components/titles";
-@import "components/buttons";
