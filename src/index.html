@@ -10,64 +10,69 @@
 <body>
 <div class="main-container">
     <header class="header">
-        <div class="logo">
-            <img src="./assets/images/logo.svg" alt="Логотип" class="logo__img">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="Логотип" class="logo__img">
+            </div>
+            <ul class="dates">
+                <li class="date">
+                    <h3 class="date__title">Прием заявок</h3>
+                    <span class="date__desc">до <span class="date__accent">11</span> марта</span>
+                </li>
+                <li class="date">
+                    <h3 class="date__title">Получение заданий</h3>
+                    <span class="date__desc"><span class="date__accent">4</span> марта</span>
+                </li>
+                <li class="date">
+                    <h3 class="date__title">Внесение ответов</h3>
+                    <span class="date__desc">до <span class="date__accent">18</span> марта</span>
+                </li>
+                <li class="date">
+                    <h3 class="date__title">Итоги конкурса</h3>
+                    <span class="date__desc"><span class="date__accent">19</span> марта</span>
+                </li>
+            </ul>
+            <button class="header__button button button_light" type="button">Вход в кабинет</button>
         </div>
-        <ul class="dates">
-            <li class="date">
-                <h3 class="date__tite">Приём заявок</h3>
-                <span class="date__desc">до <span class="accent accent_date">11</span> марта</span>
-            </li>
-            <li class="date">
-                <h3 class="date__tite">Получение заданий</h3>
-                <span class="date__desc"><span class="accent accent_date">4</span> марта</span>
-            </li>
-            <li class="date">
-                <h3 class="date__tite">Внесение ответов</h3>
-                <span class="date__desc">до <span class="accent accent_date">18</span> марта</span>
-            </li>
-            <li class="date">
-                <h3 class="date__tite">Итоги конкурса</h3>
-                <span class="date__desc"><span class="accent accent_date">19</span> марта</span>
-            </li>
-        </ul>
-        <button class="header__button button button_enter" type="button">Вход в кабинет</button>
     </header>
     <main class="main">
-        <div class="about">
-            <h1 class="about__title main-title">Тестовое задание для <span class="accent accent__title">самого лучшего</span>
-                верстальщика</h1>
-            <div class="about__info">
-                <div class="request">
-                    <h2 class="request__subtitle subtitle">Низкий оргвзнос</h2>
-                    <div class="request__price">
-                        <span class="request__price-number">30</span>
-                        <img src="./assets/images/rub.svg" alt="руб" class="request__price-currency">
-                    </div>
-                    <button class="request__button button" type="button">Подать заявку на участие</button>
+        <div class="container">
+            <section class="content">
+                <h1 class="content__title main-title">Тестовое задание для <span
+                        class="main-title__accent">самого лучшего</span>
+                    верстальщика</h1>
+                <div class="content__info">
+                    <section class="request">
+                        <h2 class="request__subtitle subtitle">Низкий оргвзнос</h2>
+                        <div class="request__price">
+                            <span class="request__price-number">30</span>
+                            <img src="./assets/images/rub.svg" alt="руб" class="request__price-currency">
+                        </div>
+                        <button class="request__button button button_accent" type="button">Подать заявку на участие</button>
+                    </section>
+                    <section class="proposals">
+                        <div class="proposals__item">
+                            <h2 class="proposals__subtitle subtitle subtitle_muted">Ученикам</h2>
+                            <ul class="proposals__offers">
+                                <li class="proposals__offer">Конкурс по 16 предметам</li>
+                                <li class="proposals__offer">Доступные задания для всех учеников</li>
+                                <li class="proposals__offer">Бесплатные дипломы и сертификаты</li>
+                            </ul>
+                        </div>
+                        <div class="proposals__item">
+                            <h2 class="proposals__subtitle subtitle subtitle_muted">Учителям</h2>
+                            <ul class="proposals__offers">
+                                <li class="proposals__offer">Бесплатные свидетельства</li>
+                                <li class="proposals__offer">Бесплатные благодарности</li>
+                                <li class="proposals__offer">Простое участие</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-                <div class="proposals">
-                    <div class="proposals__item">
-                        <h2 class="proposals__subtitle subtitle subtitle_muted">Ученикам</h2>
-                        <ul class="proposals__offers">
-                            <li class="proposals__offer">Конкурс по 16 предметам</li>
-                            <li class="proposals__offer">Доступные задания для всех учеников</li>
-                            <li class="proposals__offer">Бесплатные дипломы и сертификаты</li>
-                        </ul>
-                    </div>
-                    <div class="proposals__item">
-                        <h2 class="proposals__subtitle subtitle subtitle_muted">Учителям</h2>
-                        <ul class="proposals__offers">
-                            <li class="proposals__offer">Бесплатные свидетельства</li>
-                            <li class="proposals__offer">Бесплатные благодарности</li>
-                            <li class="proposals__offer">Простое участие</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="students">
-            <img src="./assets/images/students.png" alt="Счастливые выпускники" class="students__img">
+            </section>
+            <section class="students">
+                <img src="./assets/images/students.png" alt="Счастливые выпускники" class="students__img">
+            </section>
         </div>
     </main>
     <footer class="footer"></footer>
