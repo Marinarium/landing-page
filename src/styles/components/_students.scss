@@ -1,4 +1,18 @@
 .students {
   align-self: flex-end;
   margin-bottom: 83px;
+  position: relative;
+  z-index: 1;
+}
+
+.students:before {
+  content: '';
+  display: block;
+  background-image: url("../../assets/images/bg-students.png");
+  width: 747px;
+  height: 615px;
+  position: absolute;
+  bottom: -10px;
+  left: -67px;
+  z-index: -1;
 }

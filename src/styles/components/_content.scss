@@ -1,6 +1,20 @@
 .content {
-  padding-top: 100px;
+  padding-top: 74px;
   padding-bottom: 153px;
+  position: relative;
+  z-index: 1;
+}
+
+.content:before {
+  content: '';
+  display: block;
+  background-image: url("../../assets/images/bg-content.png");
+  width: 318px;
+  height: 515px;
+  position: absolute;
+  top: 10px;
+  left: -203px;
+  z-index: -1;
 }
 
 .content__info {
