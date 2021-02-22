@@ -15,17 +15,13 @@
 .dates {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 99px;
   flex-grow: 1;
   text-align: center;
 }
 
 .date {
-  margin-right: 64px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &__title {
     @include font-style(bold);

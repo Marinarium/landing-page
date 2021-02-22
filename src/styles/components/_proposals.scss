@@ -1,3 +1,7 @@
+.proposals {
+  max-width: 297px;
+}
+
 .proposals__item {
   border-left: 3px solid $orange;
   padding-left: 16px;
@@ -10,6 +14,7 @@
 
 .proposals__subtitle {
   margin-bottom: 16px;
+  word-wrap: break-word;
 }
 
 .proposals__offer {
