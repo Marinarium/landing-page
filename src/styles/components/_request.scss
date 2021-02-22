@@ -1,0 +1,26 @@
+.request {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 51px;
+}
+
+.request__subtitle {
+  margin-bottom: 15px;
+}
+
+.request__price {
+  flex-grow: 1;
+}
+
+.request__price-number {
+  @include font-style(bold, 36px);
+  color: #FFFFFF;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}

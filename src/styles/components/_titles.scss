@@ -1,0 +1,17 @@
+.main-title {
+  @include font-style(bold, 48px);
+  color: $light;
+
+  &__accent {
+    color: $yellow;
+  }
+}
+
+.subtitle {
+  @include font-style(bold, 24px);
+  color: $light;
+
+  &_muted {
+    color: $muted;
+  }
+}

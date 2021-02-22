@@ -1,0 +1,23 @@
+.proposals__item {
+  border-left: 3px solid $orange;
+  padding-left: 16px;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.proposals__subtitle {
+  margin-bottom: 16px;
+}
+
+.proposals__offer {
+  @include font-style(600);
+  color: $light;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

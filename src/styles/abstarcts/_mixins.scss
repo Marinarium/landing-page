@@ -3,4 +3,14 @@
   font-style: normal;
   font-weight: $font-weight;
   font-size: $font-size;
+  line-height: 120%;
+}
+
+@mixin accent($font-size: 16px) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: $font-size;
+  line-height: 120%;
+  color: #FFDE00;
 }

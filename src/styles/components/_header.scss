@@ -1,0 +1,44 @@
+.header {
+  margin: auto;
+  padding-top: 19px;
+  padding-bottom: 26px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 1225px;
+}
+
+.dates {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.date {
+  margin-right: 64px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    @include font-style(bold);
+    color: $light;
+  }
+
+  &__desc {
+    @include font-style(normal);
+    color: $muted;
+  }
+
+  &__accent {
+    @include accent();
+  }
+}
+

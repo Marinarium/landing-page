@@ -1,0 +1,27 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #8159C6 0%, #6C7CFF 100%);
+  position: relative;
+}
+
+.main {
+  margin: auto;
+  display: flex;
+  flex-grow: 1;
+  .container {
+    display: flex;
+    align-items: normal;
+    flex-grow: 1;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 153px;
+  background: linear-gradient(90deg, #FF9D66 0%, #FF7256 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: absolute;
+  bottom: 0;
+}

@@ -2,3 +2,12 @@
 @import "base/typography";
 @import "abstarcts/variables";
 @import "abstarcts/mixins";
+@import "base/page-structure";
+
+@import "components/header";
+@import "components/content";
+@import "components/request";
+@import "components/proposals";
+@import "components/students";
+@import "components/titles";
+@import "components/buttons";
