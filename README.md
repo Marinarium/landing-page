@@ -1,5 +1,5 @@
 # landing-page
-Test
+[Ссылка на старницу](https://marinarium.github.io/landing-page/public/)
 
 ## Gulp
 - `gulp build` - собрать проект
