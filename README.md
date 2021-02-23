@@ -1,5 +1,5 @@
 # landing-page
-[Ссылка на старницу](https://marinarium.github.io/landing-page/public/)
+[Ссылка на страницу](https://marinarium.github.io/landing-page/public/)
 
 ## Gulp
 - `gulp build` - собрать проект
@@ -50,6 +50,6 @@
 ```
 #### Модификаторы
 ```html
-<button class="search-form__button--sm">Найти</button>
+<button class="search-form__button_sm">Найти</button>
 
 ```
