@@ -1,11 +1,26 @@
 .proposals {
   max-width: 297px;
+
+  @include respond-to(phone-big) {
+    text-align: left;
+  }
+  @include respond-to(phone-sm) {
+    max-width: 225px;
+  }
 }
 
 .proposals__item {
   border-left: 3px solid $orange;
   padding-left: 16px;
   margin-bottom: 32px;
+
+  @include respond-to(phone-big) {
+    margin-bottom: 26px;
+  }
+
+  @include respond-to(phone) {
+    padding-left: 8px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -15,12 +30,28 @@
 .proposals__subtitle {
   margin-bottom: 16px;
   word-wrap: break-word;
+
+  @include respond-to(phone) {
+    line-height: 1;
+  }
+
+  @include respond-to(phone-sm) {
+    line-height: 120%;
+  }
 }
 
 .proposals__offer {
   @include font-style(600);
   color: $light;
   margin-bottom: 16px;
+
+  @include respond-to(phone) {
+    line-height: 1;
+  }
+
+  @include respond-to(phone-sm) {
+    line-height: 120%;
+  }
 
   &:last-child {
     margin-bottom: 0;

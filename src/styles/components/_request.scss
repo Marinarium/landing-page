@@ -3,6 +3,17 @@
   flex-direction: column;
   justify-content: space-between;
   margin-right: 51px;
+
+  @include respond-to(phone-big) {
+    margin-right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @include respond-to(phone){
+    padding: 0 9px;
+  }
 }
 
 .request__subtitle {
@@ -12,6 +23,15 @@
 
 .request__price {
   flex-grow: 1;
+
+  @include respond-to(tablet) {
+    margin-bottom: 28px;
+  }
+
+  @include respond-to(phone-big) {
+    flex-grow: initial;
+    margin-bottom: 37px;
+  }
 }
 
 .request__price-currency {
@@ -61,6 +81,13 @@
   animation-name: pulse-big;
 }
 
+.request__button-box {
+  @include respond-to(phone-big) {
+    flex-basis: 100%;
+  }
+}
+
+/*--- Animation key-frames ---*/
 @keyframes pulse {
   0% {
     transform: scale(0.9);
@@ -88,4 +115,3 @@
     opacity: 0.5;
   }
 }
-

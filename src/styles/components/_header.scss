@@ -2,14 +2,24 @@
   margin: auto;
   padding-top: 19px;
   padding-bottom: 26px;
+
+  @include respond-to(phone-big) {
+    padding-top: 13px;
+    padding-bottom: 16px;
+  }
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  max-width: 1225px;
+.header__container {
+  @include respond-to(tablet) {
+    flex-wrap: wrap;
+  }
+}
+
+.logo__img {
+  @include respond-to(phone-big) {
+    width: 131px;
+    height: 43px;
+  }
 }
 
 .dates {
@@ -19,9 +29,33 @@
   padding: 0 99px;
   flex-grow: 1;
   text-align: center;
+
+  @include respond-to(laptop-sm) {
+    padding: 0 2%;
+    justify-content: space-around;
+  }
+
+  @include respond-to(tablet) {
+    order: 3;
+    flex-basis: 100%;
+    margin-top: 28px;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  @include respond-to(phone-big) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .date {
+
+  @include respond-to(phone-big) {
+    flex-basis: 50%;
+    margin-bottom: 24px;
+  }
 
   &__title {
     @include font-style(bold);
@@ -37,3 +71,4 @@
     @include accent();
   }
 }
+

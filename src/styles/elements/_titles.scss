@@ -5,6 +5,10 @@ h1 {
   & .main-title__accent {
     color: $yellow;
   }
+
+  @include respond-to(phone-big) {
+    font-size: 24px;
+  }
 }
 
 h2 {
@@ -13,5 +17,9 @@ h2 {
 
   &.subtitle_muted {
     color: $muted;
+  }
+
+  @include respond-to(phone-sm) {
+    font-size: 20px;
   }
 }

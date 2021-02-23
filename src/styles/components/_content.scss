@@ -3,6 +3,17 @@
   padding-bottom: 153px;
   position: relative;
   z-index: 1;
+  min-width: 532px;
+
+  @include respond-to(phone-big) {
+    padding-top: 0;
+    min-width: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .content:before {
@@ -15,14 +26,29 @@
   top: 10px;
   left: -203px;
   z-index: -1;
+
+  @include respond-to(tablet) {
+    display: none;
+  }
 }
 
 .content__info {
   display: flex;
   justify-content: flex-start;
+
+  @include respond-to(tablet) {
+    flex-direction: column;
+  }
 }
 
 .content__title {
   margin-bottom: 60px;
   max-width: 532px;
+
+  @include respond-to(phone-big) {
+    margin-bottom: 29px;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

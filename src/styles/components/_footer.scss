@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  height: 153px;
+  background: linear-gradient(90deg, #FF9D66 0%, #FF7256 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+
+  @include respond-to(phone-big) {
+    height: 49px;
+  }
+}
