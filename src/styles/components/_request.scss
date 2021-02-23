@@ -6,7 +6,7 @@
 }
 
 .request__subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
   max-width: 266px;
 }
 
@@ -14,9 +14,14 @@
   flex-grow: 1;
 }
 
+.request__price-currency {
+  position: relative;
+  left: -12px;
+}
+
 .request__price-number {
   @include font-style(bold, 36px);
-  color: #FFFFFF;
+  color: $light;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +29,63 @@
   width: 62px;
   height: 62px;
   border-radius: 50%;
+  box-sizing: border-box;
 }
+
+.request__price-number:before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  min-width: 72px;
+  min-height: 72px;
+  border-radius: 50%;
+  border: 1px solid #FF885E;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-name: pulse;
+}
+
+.request__price-number:after {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  min-width: 88px;
+  min-height: 88px;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: 1px solid #FF885E;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-name: pulse-big;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse-big {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+}
+
